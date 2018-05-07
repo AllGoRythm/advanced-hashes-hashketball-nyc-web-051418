@@ -134,6 +134,7 @@ end
 
 def team_colors(name)
   game_hash.each do |key, value|
+    binding.pry
     if game_hash[key][:team_name].include?(name)
       return game_hash[key][:colors]
     end
