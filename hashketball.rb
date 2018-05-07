@@ -140,7 +140,7 @@ def team_colors(name)
   end
 end
 
-p game_hash.each do |key, value|
+game_hash.each do |key, value|
   if game_hash[key][:team_name].include?("Brooklyn Nets")
     return [:colors]
   end
