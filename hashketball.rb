@@ -180,7 +180,7 @@ def big_shoe_rebounds
     end
   end
   largest_shoe_sort = largest_shoe.sort.reverse
-  gamge_hash.each do |key, value|
+  game_hash.each do |key, value|
     game_hash[key][:players].each do |key, value|
       if game_hash[:team_name][:players][key][:shoe] == largest_shoe_sort[0]
         return game_hash[key][:players][key][:rebounds]
