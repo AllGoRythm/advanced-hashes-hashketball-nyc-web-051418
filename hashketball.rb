@@ -175,6 +175,17 @@ end
 def big_shoe_rebounds
   largest_shoe = []
   game_hash.collect do |key, value|
-    largest_shoe << value[:players][:shoe]
+    value[:players].collect do |key, value|
+      largest_shoe << value[:players][:shoe]
+    end
+  end
+  largest_shoe_sort = largest_shoe.sort.reverse
+  gamge_hash.each do |key, value|
+    game_hash[key][:players].each do |key, value|
+      if game_hash[:team_name][:players][key][:shoe] == largest_shoe_sort[0]
+        return gamge_hash[key][:players][key][:rebounds]
+      end
+    end
+
   end
 end
