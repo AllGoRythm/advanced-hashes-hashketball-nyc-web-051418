@@ -126,7 +126,7 @@ def num_points_scored(player_name)
         data.each do |name, info|
 
           if name == player_name
-            info.each do |tag, number|
+            info.select do |tag, number|
 
               if tag == :points
               puts  number
