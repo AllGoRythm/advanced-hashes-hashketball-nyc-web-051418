@@ -154,7 +154,7 @@ def player_numbers(team)
   collect = []
   game_hash.select do |key, value|
     if game_hash[key][:team_name].include?(team)
-      collect << collect += game_hash[key][:players][:number]
+      collect += game_hash[key][:players][:number]
     end
   end
   collect
