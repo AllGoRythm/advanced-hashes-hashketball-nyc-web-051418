@@ -116,81 +116,13 @@
   }#end of game hash
   end
 
-#
-# def num_points_scored(player_name)
-#   game_hash. do |team_location, team_data|
-#     team_data.select do |attribute, data|
-#       if attribute == :players
-#         data.select do |name, info|
-#           if name == player_name
-#             info.select do |tag, points|
-#               if tag == :points
-#                 points
-#               end
-#             end
-#           end
-#         end
-#       end
-#     end
-#   end
-# end
-#
-#
-# # game_hash.each do |team_location, team_data|
-# #
-# #   team_data.each do |attribute, data|
-# #
-# #     if attribute == :players
-# #       data.each do |name, info|
-# #
-# #         if name == "Jeff Adrien"
-# #           info.each do |tag, number|
-# #
-# #             if tag == :points
-# #             p  number
-# #             end
-# #
-# #           end
-# #
-# #         end
-# #
-# #       end
-# #
-# #     end
-# #
-# #    end
-# #
-# # end
-#
-# # game_hash.each do |team_location, team_data|
-# #   team_data.each do |attribute, detail|
-# #     if detail.is_a?(Hash)
-# #       detail.each do |one, two|
-# #         if one == "Ben Gordon"
-# #           p two
-# #         end
-# #       end
-# #     end
-# #   end
-# # end
-# #
-# # game_hash.each do |team_location, team_data|
-# #   team_data.each do |attribute, data|
-# #      if data.is_a?(Hash)
-# #        data.each do |name, info|
-# #          if name == "Ben Gordon"
-# #            info.each do |title, digits|
-# #              if title == :points
-# #                p digits
-# #              end
-# #            end
-# #          end
-# #        end
-# #      end
-# #   end
-# # end
-#
-#
+def numer_points_scored(name)
+  game_hash.each do |key, value|
+    if game_hash[:team_name][:players].include?(name)
+      game_hash[:team_name][:players][:points]
+  end
+end
+
 # def shoe_size
 #
 # end
@@ -207,16 +139,6 @@
 #
 # end
 
-def player_stats(name)
-  game_hash.each do |team_location, team_data|
-
-    team_data.each do |key, value|
-      if key == :players
-        key.each do |key, value|
-          binding.pry
-        end
-      end
-    end
-
-  end
-end
+# def player_stats(name)
+#
+# end
