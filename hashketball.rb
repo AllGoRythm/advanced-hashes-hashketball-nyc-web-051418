@@ -149,10 +149,14 @@ def team_names
   collect
 end
 
-#
-# def player_numbers
-#
-# end
+
+def player_numbers(names)
+  game_hash.each do |key, value|
+    if game_hash[key][:team_name].include?(name)
+      return game_hash[key][:players][:number]
+    end
+  end
+end
 
 # def player_stats(name)
 #
