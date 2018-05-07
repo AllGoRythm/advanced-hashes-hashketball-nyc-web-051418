@@ -164,11 +164,11 @@ end
 
 
 def player_stats(name)
-  game_hash.each do |key, value|
-    if game_hash[key][:players].include?(name)
-      game_hash[key][:players][name].collect do |key, value|
-        value
-      end
+  if game_hash[:home][:players].include?(name)
+    game_hash[:home][:players][name]
+    else
+      game_hash[:away][:players].include?(name)
+      game_hash[:away][:players][name]
     end
   end
 end
