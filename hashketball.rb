@@ -142,9 +142,11 @@ end
 
 
 def team_names
-  game_hash.each do |key, value|
-    return game_hash[key][:team_name]
+  collect = []
+  game_hash.select do |key, value|
+    collect << game_hash[key][:team_name]
   end
+  collect
 end
 #
 # def player_numbers
