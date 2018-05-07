@@ -209,6 +209,13 @@
 
 def player_stats(name)
   game_hash.each do |team_location, team_data|
-    binding.pry
+
+    team_data.each do |key, value|
+      value.select do |key, value|
+        binding.pry
+
+      end
+    end
+
   end
 end
