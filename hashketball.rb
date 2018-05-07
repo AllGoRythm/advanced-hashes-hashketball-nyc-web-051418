@@ -129,7 +129,7 @@ def num_points_scored(player_name)
             info.each do |tag, number|
 
               if tag == :points
-                number
+                puts number
 
               end
 
@@ -144,30 +144,30 @@ def num_points_scored(player_name)
 end
 
 
-game_hash.each do |team_location, team_data|
+# game_hash.each do |team_location, team_data|
+#
+#   team_data.each do |attribute, data|
+#
+#     if attribute == :players
+#       data.each do |name, info|
+#
+#         if name == "Brendan Haywood"
+#           info.each do |tag, number|
+#
+#             if tag == :points
+#             p  number
+#             end
+#
+#           end
+#
+#         end
+#
+#       end
+#
+#     end
+#
+#   end
 
-  team_data.each do |attribute, data|
-
-    if attribute == :players
-      data.each do |name, info|
-
-        if name == "Brendan Haywood"
-          info.each do |tag, number|
-
-            if tag == :points
-            p  number
-            end
-
-          end
-
-        end
-
-      end
-
-    end
-
-  end
-  
 end
 
 # game_hash.each do |team_location, team_data|
