@@ -131,10 +131,10 @@ def shoe_size(name)
     end
   end
 end
-#
-# def team_colors
-#
-# end
+
+def team_colors(team_name)
+
+end
 #
 # def team_names
 #
