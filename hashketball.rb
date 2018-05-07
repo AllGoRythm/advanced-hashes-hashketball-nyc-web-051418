@@ -171,3 +171,9 @@ def player_stats(name)
       game_hash[:away][:players][name]
   end
 end
+
+def big_shoe_rebounds
+  game_hash.select do |key, value|
+
+  end
+end
