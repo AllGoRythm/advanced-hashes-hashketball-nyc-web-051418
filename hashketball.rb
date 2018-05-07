@@ -142,13 +142,11 @@ end
 
 
 def team_names
-  the_names = []
   game_hash.each do |key, value|
-    if game_hash[key][:team_names]
-      the_names << game_hash[key][:team_names]
+    if game_hash[key][:team_name].include?(name)
+      return game_hash[key][:team_name]
     end
   end
-  the_names
 end
 #
 # def player_numbers
