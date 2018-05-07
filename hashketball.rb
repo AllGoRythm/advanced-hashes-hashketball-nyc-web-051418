@@ -151,7 +151,7 @@ game_hash.each do |team_location, team_data|
     if attribute == :players
       data.each do |name, info|
 
-        if name == player_name
+        if name == "Brendan Haywood"
           info.each do |tag, number|
 
             if tag == :points
