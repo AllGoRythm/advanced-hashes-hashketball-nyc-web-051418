@@ -156,16 +156,18 @@ game_hash.each do |team_location, team_data|
 
             if tag == :points
             p  number
-
             end
 
           end
+
         end
 
       end
+
     end
 
   end
+  
 end
 
 # game_hash.each do |team_location, team_data|
