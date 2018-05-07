@@ -163,7 +163,7 @@ end
 collect = []
 game_hash.each do |key, value|
   if game_hash[key][:team_name].include?("Brooklyn Nets")
-    collect += game_hash[key][:players][:number]
+    collect << collect += game_hash[key][:players][:number]
   end
 end
 p collect
