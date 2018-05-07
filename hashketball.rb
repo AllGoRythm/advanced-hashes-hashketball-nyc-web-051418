@@ -135,7 +135,7 @@ end
 def team_colors(name)
   game_hash.each do |key, value|
     if game_hash[key][:team_name].include?(name)
-      return "cool"
+      return [:colors]
     end
   end
 end
