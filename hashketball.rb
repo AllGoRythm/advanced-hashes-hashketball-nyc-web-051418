@@ -210,7 +210,7 @@
 def player_stats(name)
   game_hash.each do |team_location, team_data|
 
-    team_data.[:players]each do |key, value|
+    team_data.each do |key, value|
       binding.pry
     end
 
