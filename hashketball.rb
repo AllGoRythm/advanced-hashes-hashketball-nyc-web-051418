@@ -166,9 +166,9 @@ end
 #
 #     end
 #
-#   end
-
-end
+#    end
+#
+# end
 
 # game_hash.each do |team_location, team_data|
 #   team_data.each do |attribute, detail|
