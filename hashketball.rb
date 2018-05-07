@@ -166,7 +166,6 @@ end
 def player_stats(name)
   if game_hash[:home][:players].include?(name)
     game_hash[:home][:players][name]
-    binding.pry
     else
       game_hash[:away][:players].include?(name)
       game_hash[:away][:players][name]
