@@ -173,7 +173,8 @@ def player_stats(name)
 end
 
 def big_shoe_rebounds
-  game_hash.select do |key, value|
-
+  largest_shoe = []
+  game_hash.collect do |key, value|
+    binding.pry
   end
 end
