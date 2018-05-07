@@ -154,7 +154,7 @@ def player_numbers(name)
   collect = []
   game_hash.each do |key, value|
     if game_hash[key][:players].include?(name)
-      collect << collect += game_hash[key][:players][:number]
+      collect << game_hash[key][:players][name][:number]
     end
   end
   collect
