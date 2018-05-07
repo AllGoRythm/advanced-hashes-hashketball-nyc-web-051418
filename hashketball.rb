@@ -154,6 +154,7 @@ game_hash.select do |key, value|
   collect << game_hash[key][:team_name]
 end
 collect
+end
 #
 # def player_numbers
 #
