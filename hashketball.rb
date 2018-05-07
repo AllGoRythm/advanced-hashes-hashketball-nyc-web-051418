@@ -129,7 +129,7 @@ def num_points_scored(player_name)
             info.each do |tag, number|
 
               if tag == :points
-              p  number
+              puts  number
               end
 
             end
