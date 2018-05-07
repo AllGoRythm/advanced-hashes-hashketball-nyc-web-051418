@@ -154,6 +154,7 @@ def player_numbers(team)
   if game_hash[:home][:team_name].include?(team)
     game_hash[:home][:players].collect do |key, value|
       value[:number]
+    end
     else
       game_hash[:away][:players].collect do |key, value|
         value[:number]
