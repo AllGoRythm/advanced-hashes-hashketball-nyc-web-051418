@@ -116,7 +116,7 @@
   }#end of game hash
   end
 
-def numer_points_scored(name)
+def number_points_scored(name)
   game_hash.each do |key, value|
     if game_hash[key][:players].include?(name)
       game_hash[key][:players][name][:points]
