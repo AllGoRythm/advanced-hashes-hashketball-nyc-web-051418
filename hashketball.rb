@@ -169,6 +169,5 @@ def player_stats(name)
     else
       game_hash[:away][:players].include?(name)
       game_hash[:away][:players][name]
-    end
   end
 end
