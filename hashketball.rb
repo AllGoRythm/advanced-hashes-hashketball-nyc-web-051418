@@ -124,7 +124,7 @@ def num_points_scored(name)
   end
 end
 
-def shoe_size
+def shoe_size(name)
   game_hash.each do |key, value|
     if game_hash[key][:players].include?(name)
       return game_hash[key][:players][name][:shoe]
