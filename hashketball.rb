@@ -124,7 +124,9 @@ def num_points_scored(player_name)
         data.each do |name, info|
           if name == player_name
             info.each do |tag, points|
-              binding.pry
+              if tag == :points
+                points
+              end
             end
           end
         end
