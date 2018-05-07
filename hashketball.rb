@@ -126,7 +126,6 @@ def num_points_scored(player_name)
             info.each do |tag, points|
               if tag == :points
                 points
-                binding.pry
               end
             end
           end
