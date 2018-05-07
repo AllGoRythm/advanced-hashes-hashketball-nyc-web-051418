@@ -125,12 +125,12 @@ def num_points_scored(player_name)
       if attribute == :players
         data.each do |name, info|
 
-          if name == "Brendan Haywood"
+          if name == player_name
             info.each do |tag, number|
 
               if tag == :points
                 number
-                binding.pry
+
               end
 
             end
