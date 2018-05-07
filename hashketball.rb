@@ -166,7 +166,7 @@ end
 def player_stats(name)
   game_hash.each do |key, value|
     if game_hash[key][:players].include?(name)
-      game_hash[key][:players][name].collect  do |key, value|
+      game_hash[key][:players][name].collect do |key, value|
         value
       end
     end
