@@ -151,11 +151,10 @@ end
 
 
 def player_numbers(team)
-  game_hash.each do |key, value|
-    if game_hash[key][:team_name][:players].collect do |key, value|
-      return value[:number]
+  if game_hash[:home][:team_name].include?(team)
+    game_hash[:home][:players].collect do |key, value|
+      binding.pry
     end
-  end
 end
 
 
