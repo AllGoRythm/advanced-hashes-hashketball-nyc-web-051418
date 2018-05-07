@@ -118,7 +118,7 @@
 
 
 def num_points_scored(player_name)
-  game_hash.select do |team_location, team_data|
+  game_hash. do |team_location, team_data|
     team_data.select do |attribute, data|
       if attribute == :players
         data.select do |name, info|
@@ -189,3 +189,27 @@ end
 #      end
 #   end
 # end
+
+
+def shoe_size
+
+end
+
+def team_colors
+
+end
+
+def team_names
+
+end
+
+def player_numbers
+
+end
+
+def player_stats(name)
+  game_hash.each do |team_location, team_data|
+    binding.pry
+
+  end
+end
