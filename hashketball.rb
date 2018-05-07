@@ -151,22 +151,13 @@ end
 
 
 def player_numbers(team)
-  collect = []
-  game_hash.each do |key, value|
-    if game_hash[key][:team_name].include?(team)
-      collect << game_hash[key][:players][:number]
+  game_hash.collect do |key, value|
+    if game_hash[key][:team_name].include?(name)
+      return game_hash[key][:colors]
     end
   end
-  collect
 end
 
-collect = []
-game_hash.each do |key, value|
-  if game_hash[key][:team_name].include?("Brooklyn Nets")
-    collect << collect += game_hash[key][:players][:number]
-  end
-end
-p collect
 
 # def player_stats(name)
 #
