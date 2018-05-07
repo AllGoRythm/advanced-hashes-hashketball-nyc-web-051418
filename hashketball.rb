@@ -121,8 +121,7 @@ def num_points_scored(player_name)
   game_hash.select do |team_location, team_data|
     team_data.select do |attribute, data|
       if attribute == :players
-        data.each do |variable|
-          variable
+        data.each do |name, info|
           binding.pry
         end
       end
