@@ -155,6 +155,7 @@ def player_numbers(team)
     game_hash[:home][:players].collect do |key, value|
       binding.pry
     end
+  end
 end
 
 
