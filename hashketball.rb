@@ -143,9 +143,7 @@ end
 
 def team_names
   game_hash.each do |key, value|
-    if game_hash[key][:team_name].include?(name)
-      return game_hash[key][:team_name]
-    end
+    return game_hash[key][:team_names]
   end
 end
 #
