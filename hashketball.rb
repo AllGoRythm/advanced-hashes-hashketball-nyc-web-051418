@@ -166,7 +166,7 @@ game_hash.each do |key, value|
     collect << game_hash[key][:players][:number]
   end
 end
-collect
+p collect
 
 # def player_stats(name)
 #
